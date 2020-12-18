@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
         initData();
-
+        //初始化事件
         initEvent();
 
         //处理下拉刷新
