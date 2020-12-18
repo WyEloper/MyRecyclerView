@@ -1,4 +1,4 @@
-package com.wyong.myrecyclerview;
+package com.wyong.myrecyclerview.test;
 
 import android.view.View;
 import android.view.ViewGroup;
