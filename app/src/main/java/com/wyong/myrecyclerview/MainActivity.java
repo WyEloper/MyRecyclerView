@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initView();
+        //初始化数据
         initData();
         //初始化事件
         initEvent();
