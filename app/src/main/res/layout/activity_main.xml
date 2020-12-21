@@ -17,54 +17,66 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="添加"
             android:onClick="onAddDataClick"
+            android:text="添加"
             android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_delete"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="删除"
             android:onClick="onDeleteDataClick"
+            android:text="删除"
             android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="list"
             android:onClick="onListLayoutClick"
+            android:text="list"
             android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_grid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="grid"
             android:onClick="onGridLayoutClick"
+            android:text="grid"
             android:textAllCaps="false" />
+
         <Button
             android:id="@+id/btn_flow"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="flow"
             android:onClick="onFlowLayoutClick"
+            android:text="flow"
             android:textAllCaps="false" />
 
     </LinearLayout>
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <Button
+        android:id="@+id/btn_multiType"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多种条目类型的RecyclerView"
+        android:textAllCaps="false"
+        android:onClick="onMultiTypeClick"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#d3d3d3"/>
+            android:background="#d3d3d3" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

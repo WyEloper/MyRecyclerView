@@ -1,5 +1,6 @@
 package com.wyong.myrecyclerview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -143,4 +144,13 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
     }
 
+    /**
+     * RecyclerView 多种条目类型的布局
+     *
+     * @param v
+     */
+    public void onMultiTypeClick(View v) {
+        Intent intent = new Intent(this, MultiTypeActivity.class);
+        startActivity(intent);
+    }
 }
