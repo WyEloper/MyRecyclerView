@@ -10,6 +10,11 @@ import com.wyong.myrecyclerview.beans.MultiTypeBean;
 
 import java.util.List;
 
+/**
+ * 多种条目类型 RecyclerView 的适配器 Adapter
+ * @author Wyong
+ * @time 2020-12-21 11:12:59
+ */
 public class MultiTypeAdapter extends RecyclerView.Adapter {
 
     private final List<MultiTypeBean> mDatas;
